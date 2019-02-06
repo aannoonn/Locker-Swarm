@@ -5,6 +5,7 @@ window.onload = function (e) {
 };
 
 function initializeApp(data) {
+    console.log(data,'data');
     document.getElementById('languagefield').textContent = data.language;
     document.getElementById('viewtypefield').textContent = data.context.viewType;
     document.getElementById('useridfield').textContent = data.context.userId;
@@ -14,6 +15,7 @@ function initializeApp(data) {
 
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
+        console.log(liff,'liff');
         liff.openWindow({
             url: 'https://line.me'
         });
